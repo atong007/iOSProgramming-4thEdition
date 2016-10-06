@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Serial:"; ObjectID = "E6J-Ve-fBX"; */
+"E6J-Ve-fBX.text" = "序列号:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "Fsm-uo-CAf"; */
+"Fsm-uo-CAf.text" = "项目:";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "aHq-BX-ICE"; */
+"aHq-BX-ICE.text" = "价值:";
+
+/* Class = "UIBarButtonItem"; title = "AssetType"; ObjectID = "exl-dd-bt5"; */
+"exl-dd-bt5.title" = "类别";

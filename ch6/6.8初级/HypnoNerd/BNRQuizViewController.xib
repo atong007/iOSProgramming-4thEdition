@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRQuizViewController">
+            <connections>
+                <outlet property="answerLabel" destination="jxr-G9-YTS" id="V1H-2r-ElD"/>
+                <outlet property="questionLabel" destination="CTm-Te-13V" id="B0t-Xz-PZO"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aM-m4-fyn">
+                    <rect key="frame" x="20" y="95" width="280" height="30"/>
+                    <state key="normal" title="Show Question">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showQuestionButtonPressed:" destination="-1" eventType="touchUpInside" id="yaC-Mj-ex0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADI-hG-LNe">
+                    <rect key="frame" x="20" y="391" width="280" height="30"/>
+                    <state key="normal" title="Show Answer">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showAnswerButtonPressed:" destination="-1" eventType="touchUpInside" id="Dh8-50-gsY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTm-Te-13V">
+                    <rect key="frame" x="20" y="66" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxr-G9-YTS">
+                    <rect key="frame" x="20" y="362" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9aM-m4-fyn" firstAttribute="top" secondItem="CTm-Te-13V" secondAttribute="bottom" constant="8" symbolic="YES" id="45V-m4-FGi"/>
+                <constraint firstItem="jxr-G9-YTS" firstAttribute="leading" secondItem="ADI-hG-LNe" secondAttribute="leading" id="GPq-y8-P64"/>
+                <constraint firstItem="CTm-Te-13V" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Hcd-Sm-hM7"/>
+                <constraint firstItem="9aM-m4-fyn" firstAttribute="trailing" secondItem="jxr-G9-YTS" secondAttribute="trailing" id="Mie-s8-v6B"/>
+                <constraint firstItem="CTm-Te-13V" firstAttribute="trailing" secondItem="9aM-m4-fyn" secondAttribute="trailing" id="dy4-bN-o9K"/>
+                <constraint firstItem="jxr-G9-YTS" firstAttribute="trailing" secondItem="ADI-hG-LNe" secondAttribute="trailing" id="hzp-Jp-2HJ"/>
+                <constraint firstItem="9aM-m4-fyn" firstAttribute="leading" secondItem="jxr-G9-YTS" secondAttribute="leading" id="iJx-kB-EL7"/>
+                <constraint firstItem="CTm-Te-13V" firstAttribute="leading" secondItem="9aM-m4-fyn" secondAttribute="leading" id="j86-X9-NEY"/>
+                <constraint firstItem="CTm-Te-13V" firstAttribute="top" secondItem="1" secondAttribute="top" constant="66" id="jtz-FU-d8O"/>
+                <constraint firstItem="ADI-hG-LNe" firstAttribute="top" secondItem="jxr-G9-YTS" secondAttribute="bottom" constant="8" symbolic="YES" id="kyo-zb-YMj"/>
+                <constraint firstAttribute="bottom" secondItem="ADI-hG-LNe" secondAttribute="bottom" constant="147" id="sll-ds-a4v"/>
+                <constraint firstItem="CTm-Te-13V" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="tuJ-Qf-IZD"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

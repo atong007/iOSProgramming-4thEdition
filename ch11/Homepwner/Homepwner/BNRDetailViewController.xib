@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDetailViewController">
+            <connections>
+                <outlet property="dateLabel" destination="i9r-7i-tM4" id="AOU-Rs-rEa"/>
+                <outlet property="imageView" destination="Bci-N4-LvB" id="dQF-JA-7jA"/>
+                <outlet property="itemNameTexField" destination="TYK-CJ-fF1" id="Pqn-4O-SXa"/>
+                <outlet property="serailTextField" destination="8Af-Yh-wNb" id="ZcQ-br-PHm"/>
+                <outlet property="trashButton" destination="3IF-TY-52P" id="r5G-pW-KMD"/>
+                <outlet property="valueTextField" destination="xKp-iF-SeF" id="VGw-io-Ztb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqA-LT-fjK">
+                    <rect key="frame" x="159" y="110" width="282" height="146"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYK-CJ-fF1">
+                            <rect key="frame" x="76" y="3" width="206" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsm-uo-CAf">
+                            <rect key="frame" x="8" y="7" width="66" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-Yh-wNb">
+                            <rect key="frame" x="76" y="41" width="206" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serial:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6J-Ve-fBX">
+                            <rect key="frame" x="8" y="45" width="66" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKp-iF-SeF">
+                            <rect key="frame" x="76" y="80" width="206" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHq-BX-ICE">
+                            <rect key="frame" x="8" y="83" width="66" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9r-7i-tM4">
+                            <rect key="frame" x="0.0" y="117" width="282" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="282" id="bMY-ez-7kh"/>
+                        <constraint firstAttribute="height" constant="146" id="fcv-fW-fA0"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bci-N4-LvB">
+                    <rect key="frame" x="159" y="273" width="282" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="Ajt-pT-2Gi"/>
+                        <constraint firstAttribute="width" constant="282" id="CNe-6R-OLh"/>
+                    </constraints>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oif-A7-gJS">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="VER-fr-N38">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="exL-mJ-pqc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="MAO-8n-HLO"/>
+                        <barButtonItem systemItem="trash" id="3IF-TY-52P">
+                            <connections>
+                                <action selector="deleteImage:" destination="-1" id="Chu-wn-p9p"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Oif-A7-gJS" secondAttribute="trailing" id="2W9-wh-PKi"/>
+                <constraint firstAttribute="bottom" secondItem="Oif-A7-gJS" secondAttribute="bottom" id="4qQ-gG-dAj"/>
+                <constraint firstItem="Bci-N4-LvB" firstAttribute="top" secondItem="VqA-LT-fjK" secondAttribute="bottom" constant="17" id="S3s-Gf-VQe"/>
+                <constraint firstItem="VqA-LT-fjK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y2q-B0-HpX"/>
+                <constraint firstItem="Oif-A7-gJS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bLr-5f-dTQ"/>
+                <constraint firstItem="Bci-N4-LvB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cXj-7o-sQN"/>
+                <constraint firstItem="VqA-LT-fjK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="mDO-A5-S5G"/>
+            </constraints>
+            <connections>
+                <action selector="backgroundTapped:" destination="-1" eventType="touchDown" id="clz-m6-pdA"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo.png" width="380" height="561"/>
+    </resources>
+</document>
